@@ -1,0 +1,192 @@
+/*
+Theme Name: Darkly
+Author: Caleb Denio
+Author URI: https://calebdenio.me
+Description: If Batman had a blog, he'd use this theme.
+*/
+body,
+html {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Open Sans";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Metropolis;
+  color: rgb(150, 150, 150);
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h1.underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 25%;
+  height: 3px;
+  background-color: var(--main_color);
+  top: calc(100% + 5px);
+}
+
+.menu li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  font-family: Metropolis;
+  font-weight: bold;
+  position: relative;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu .current_page_item::after {
+  content: "";
+  background-color: var(--main_color);
+  width: 50%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.posts {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+a:not(.title) {
+  color: white;
+}
+
+a:hover {
+  color: var(--main_color);
+}
+
+a.title:hover h1 {
+    color: var(--main_color);
+}
+
+a.title {
+  text-decoration: none;
+}
+
+blockquote {
+  border-left: 5px solid rgb(70, 70, 70);
+  margin-left: 0;
+  padding-left: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px 0 30px 50px;
+    box-sizing: border-box;
+}
+
+h1.site-title {
+    font-weight: lighter;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.written-by {
+    font-family: "Metropolis", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.written-by > * {
+    vertical-align: middle;
+}
+
+.written-by .author-avatar {
+    width: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+/* Form stuff */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    background-color: rgb(75, 75, 75);
+    border: none;
+    padding: 10px;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+
+button, input[type="submit"] {
+    background-color: transparent;
+    border: 2px solid var(--main_color);
+    color: white;
+
+    font-family: Metropolis;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1000px;
+}
+
+.frm_required {
+    color: red;
+}
+
+.frm_message {
+  border-left: 3px solid var(--main_color);
+  padding-left: 10px;
+  margin-left: 0;
+}
+
+div.frm_submit, .form-field {
+    margin: 10px 0;
+}
+.frm_error {
+    border-left: 3px solid rgb(70, 70, 70);
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.frm_error_style {
+    border-left: 3px solid red;
+    padding-left: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.wp-post-image {
+  display: block;
+  margin-bottom: 20px;
+  /* max-width: 100%;
+  width: 100%;
+  height: auto; */
+}

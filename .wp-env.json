@@ -1,0 +1,4 @@
+{
+  "plugins": ["https://downloads.wordpress.org/plugin/formidable.4.06.01.zip", "https://downloads.wordpress.org/plugin/elementor.2.9.14.zip"],
+  "themes": ["."]
+}
