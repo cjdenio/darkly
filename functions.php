@@ -41,3 +41,9 @@ function add_custom_styles() {
     <?php
 }
 add_action('wp_head', 'add_custom_styles');
+
+// function darkly_login() {
+//     wp_enqueue_style('darkly-login', get_template_directory_uri() . '/login.css');
+//     wp_enqueue_style('style', get_stylesheet_uri());
+// }
+// add_action('login_enqueue_scripts', 'darkly_login');

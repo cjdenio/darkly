@@ -106,10 +106,12 @@ h1.site-title {
     margin: 0;
 }
 
-.written-by {
+.post-data {
     font-family: "Metropolis", sans-serif;
     font-weight: bold;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .written-by > * {
@@ -120,6 +122,12 @@ h1.site-title {
     width: 30px;
     margin: 0 5px;
     border-radius: 50%;
+}
+
+.post-data .date {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid rgb(150, 150, 150);
 }
 
 /* Form stuff */
@@ -189,4 +197,46 @@ label {
   /* max-width: 100%;
   width: 100%;
   height: auto; */
+}
+
+.footer {
+  width: 100%;
+  display: block;
+  background-color: #222;
+  margin-top: 100px;
+  padding: 30px 0;
+  font-family: "Metropolis", "Open Sans", sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  color: #aaa;
+}
+
+.footer a {
+  font-weight: bold;
+}
+.footer a:not(:hover) {
+  color: #aaa;
+}
+
+.author-header {
+  display: block;
+  text-align: center;
+}
+
+.author-header .avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.author-header h1 {
+  font-size: 35px;
+  color: white;
+}
+
+.author-header p:not(:empty) {
+  max-width: 500px;
+  margin: 20px auto;
+  padding-left: 10px;
+  border-left: 3px solid rgb(70, 70, 70);
 }
