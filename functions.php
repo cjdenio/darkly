@@ -1,4 +1,6 @@
 <?php
+add_theme_support( 'post-thumbnails' );
+
 function register_menus() {
     register_nav_menus(
         array(
@@ -6,15 +8,12 @@ function register_menus() {
         )
     );
 }
-
 add_action('init', 'register_menus');
-
-add_theme_support( 'post-thumbnails' );
 
 function enqueue_scripts() {
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('darkly_fonts', get_template_directory_uri() . "/fonts.css");
 }
-
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
 function darkly_customize_preview_init() {
@@ -41,9 +40,3 @@ function add_custom_styles() {
     <?php
 }
 add_action('wp_head', 'add_custom_styles');
-
-// function darkly_login() {
-//     wp_enqueue_style('darkly-login', get_template_directory_uri() . '/login.css');
-//     wp_enqueue_style('style', get_stylesheet_uri());
-// }
-// add_action('login_enqueue_scripts', 'darkly_login');

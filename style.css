@@ -19,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Metropolis;
+  font-family: Metropolis, sans-serif;
   color: rgb(150, 150, 150);
   position: relative;
   box-sizing: border-box;
@@ -202,7 +202,6 @@ label {
 .footer {
   width: 100%;
   display: block;
-  background-color: #222;
   margin-top: 100px;
   padding: 30px 0;
   font-family: "Metropolis", "Open Sans", sans-serif;

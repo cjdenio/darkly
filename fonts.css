@@ -1,0 +1,25 @@
+@font-face {
+  src: url(./fonts/Metropolis/Metropolis-Thin.ttf);
+  font-family: "Metropolis", sans-serif;
+  font-weight: 100;
+}
+@font-face {
+  src: url(./fonts/Metropolis/Metropolis-ExtraLight.ttf);
+  font-family: "Metropolis", sans-serif;
+  font-weight: 200;
+}
+@font-face {
+  src: url(./fonts/Metropolis/Metropolis-Light.ttf);
+  font-family: "Metropolis", sans-serif;
+  font-weight: 300;
+}
+@font-face {
+  src: url(./fonts/Metropolis/Metropolis-Regular.ttf);
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  src: url(./fonts/Metropolis/Metropolis-Bold.ttf);
+  font-family: "Metropolis", sans-serif;
+  font-weight: 700;
+}
