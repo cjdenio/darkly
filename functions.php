@@ -31,12 +31,23 @@ function darkly_customize_register( $wp_customize ) {
     'label' => 'Accent Color',
     'section' => 'colors'
   )));
+
+  $wp_customize->add_setting('show_attribution', array(
+    'type' => 'theme_mod',
+    'default' => true,
+    'transport' => 'postMessage'
+  ));
+  $wp_customize->add_control('show_attribution', array(
+      'type' => 'checkbox',
+      'section' => 'title_tagline',
+      'label' => 'Show Attribution'
+  ));
 }
 add_action('customize_register','darkly_customize_register');
 
 function add_custom_styles() {
     ?>
-    <style>:root {--main_color: <?php echo get_theme_mod('main_color', '#11E38C'); ?>;}</style>
+    <style>:root {--main_color: <?php echo get_theme_mod('main_color', '#11E38C'); ?>;} .footer{display: <?php echo get_theme_mod('show_attribution', true) ? "block" : "none"; ?>;}</style>
     <?php
 }
 add_action('wp_head', 'add_custom_styles');
